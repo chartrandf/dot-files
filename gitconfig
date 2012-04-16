@@ -1,0 +1,25 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    interactive = auto
+
+[user]
+	name = Francis Chartrand
+	email = chartrandf@bonyweb.com
+
+[alias]
+  unstage = reset HEAD
+  ust = reset HEAD
+  rollback = reset --soft HEAD~1
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  oush = push
+  lg = log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=relative
+  hist = log --pretty=format:'%h by %an, %ar, %s' --date=relative
+  smpush = submodule foreach 'git push'
+  smpull = submodule foreach 'git pull origin master'
+  smsum = submodule summary

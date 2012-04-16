@@ -1,0 +1,16 @@
+.bundle
+db/*.sqlite3
+db/sphinx
+config/*.sphinx.conf
+log/
+tmp/
+.rvmrc
+.local*
+.DS_Store
+.yardoc
+/doc
+test/reports
+results
+/vendor/bundle
+/script/daemons.log
+/script/*.pid
