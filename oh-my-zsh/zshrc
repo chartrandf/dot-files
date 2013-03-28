@@ -27,6 +27,7 @@ alias bu="bundle update"
 
 alias mstart="mysql.server start"
 alias mstop="mysql.server stop"
+alias mstatus="mysql.server status"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
