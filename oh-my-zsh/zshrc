@@ -25,6 +25,11 @@ alias bl="bundle list"
 alias bp="bundle package"
 alias bu="bundle update"
 
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias iplocal="ipconfig getifaddr en1"
+alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
+
 alias mstart="mysql.server start"
 alias mstop="mysql.server stop"
 alias mstatus="mysql.server status"
