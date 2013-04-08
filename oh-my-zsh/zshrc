@@ -26,8 +26,8 @@ alias bp="bundle package"
 alias bu="bundle update"
 
 # IP addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias iplocal="ipconfig getifaddr en1"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com; dig +short myip.opendns.com @resolver1.opendns.com | pbcopy"
+alias iplocal="ipconfig getifaddr en1; ipconfig getifaddr en1 | pbcopy"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
 alias mstart="mysql.server start"
