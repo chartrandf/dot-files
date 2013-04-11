@@ -25,6 +25,9 @@ alias bl="bundle list"
 alias bp="bundle package"
 alias bu="bundle update"
 
+# Virtual listing
+alias vhosts="apachectl -S"
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com; dig +short myip.opendns.com @resolver1.opendns.com | pbcopy"
 alias iplocal="ipconfig getifaddr en1; ipconfig getifaddr en1 | pbcopy"
