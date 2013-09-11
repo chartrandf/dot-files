@@ -1,3 +1,9 @@
 [
-  {"keys": ["super+j"], "command": "join_lines" }
+  {"keys": ["super+j"], "command": "join_lines" },
+  // Prevent non-breakable space on mac with ALT+SPACE
+  {
+    "keys": ["alt+space"],
+    "command": "insert_snippet",
+    "args": {"contents": " "}
+  }
 ]
