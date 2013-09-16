@@ -25,6 +25,9 @@ alias bl="bundle list"
 alias bp="bundle package"
 alias bu="bundle update"
 
+# Date
+alias current_date='date "+%Y-%m-%d %H:%M:%S"'
+
 # Virtual listing
 alias vhosts="apachectl -S"
 
