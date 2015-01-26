@@ -28,6 +28,9 @@ alias bu="bundle update"
 # Date
 alias current_date='date "+%Y-%m-%d %H:%M:%S"'
 
+# Password generation
+alias passgen="openssl rand -hex 15"
+
 # Virtual listing
 alias vhosts="apachectl -S"
 
