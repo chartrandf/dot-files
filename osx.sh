@@ -11,7 +11,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Show hidden files and folders on Finder
-write com.apple.Finder AppleShowAllFiles YES
-killall -KILL Finder
+defaults write com.apple.finder AppleShowAllFiles -boolean true
+killall Finder
 
 echo "OSX global vars configured"
