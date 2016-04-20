@@ -1,9 +1,20 @@
 [
-  {"keys": ["super+j"], "command": "join_lines" },
+  // Join lines
+  {
+    "keys": ["super+j"],
+    "command": "join_lines"
+  },
+
   // Prevent non-breakable space on mac with ALT+SPACE
   {
     "keys": ["alt+space"],
     "command": "insert_snippet",
-    "args": {"contents": " "}
+    "args": { "contents": " " }
+  },
+
+  // Add shortcut for title case
+  {
+    "keys": ["super+k", "super+t"],
+    "command": "title_case"
   }
 ]
