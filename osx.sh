@@ -1,8 +1,8 @@
 # Repeat delay
-defaults write NSGlobalDomain InitialKeyRepeat -int 11
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Faster key repeat
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Disable press and hold funtions
 defaults write -g ApplePressAndHoldEnabled -bool false
