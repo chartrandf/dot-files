@@ -89,3 +89,6 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+# Welcome message (Optional)
+# sh /Users/chartrandf/zcripts/welcome.sh
