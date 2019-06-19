@@ -8,13 +8,18 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bureau"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias lls="ls -aFhlG"
 alias ll="ls -l"
 alias ..="cd .."
 alias ....="cd ../.."
 alias g="git"
+
+# React Native
+alias rn-android="react-native run-android"
+alias rn-android-menu="adb shell input keyevent 82"
+alias rn-android-reverse="adb reverse tcp:8081 tcp:8081"
+alias rn-ios="react-native run-ios"
+alias rn-start="react-native start"
 
 # Date
 alias current_date='date "+%Y-%m-%d %H:%M:%S"'
@@ -22,28 +27,13 @@ alias current_date='date "+%Y-%m-%d %H:%M:%S"'
 # Password generation
 alias passgen="openssl rand -hex 15"
 
-# Virtual listing
+# Virtual Host listing
 alias vhosts="apachectl -S | grep 'port 80\|alias\|default server'"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com; dig +short myip.opendns.com @resolver1.opendns.com | pbcopy"
 alias iplocal="ipconfig getifaddr en1; ipconfig getifaddr en1 | pbcopy"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
