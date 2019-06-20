@@ -17,9 +17,12 @@ alias g="git"
 # React Native
 alias rn-android="react-native run-android"
 alias rn-android-menu="adb shell input keyevent 82"
-alias rn-android-reverse="adb reverse tcp:8081 tcp:8081"
 alias rn-ios="react-native run-ios"
 alias rn-start="react-native start"
+
+# Android
+alias adb-d="adb devices"
+alias adb-r="adb reverse tcp:8081 tcp:8081 | echo 'adb : reverse tcp:8081'"
 
 # Date
 alias current_date='date "+%Y-%m-%d %H:%M:%S"'
