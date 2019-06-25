@@ -1,6 +1,6 @@
 printf "\e[0;32mOpen all files in Visual Studio Code!\e[0m \n"
 
-code /private/etc/apache2/extra/httpd-vhosts.conf
+code /usr/local/etc/httpd/extra/httpd-vhosts.conf
 sleep 1
 code /etc/hosts
 
