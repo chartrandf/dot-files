@@ -27,6 +27,7 @@ alias adb-r="adb reverse tcp:8081 tcp:8081 | echo 'adb : reverse tcp:8081'"
 
 # Date
 alias current_date='date "+%Y-%m-%d %H:%M:%S"'
+alias current-date='current_date'
 
 # Password generation
 alias passgen="openssl rand -hex 15"
@@ -39,12 +40,14 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com; dig +short myip.op
 alias iplocal="ipconfig getifaddr en1; ipconfig getifaddr en1 | pbcopy"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 
+# Shortcuts
+alias histogrep='history | grep "$@"'
+
 # Wazo.io
 alias portalformat="git status -uno --porcelain | grep --color='never' '[A|M]' | cut -f3 -d' ' | xargs yarn format:file"
 alias wdk-init="sh ~/zcripts/wazo.sh init"
 alias wdk-push="sh ~/zcripts/wazo.sh push"
 alias wdk-remove="sh ~/zcripts/wazo.sh remove"
-
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
