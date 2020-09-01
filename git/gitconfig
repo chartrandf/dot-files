@@ -3,6 +3,7 @@
     status = auto
     branch = auto
     interactive = auto
+    ui = true   
 
 [user]
     name = Francis Chartrand
@@ -17,3 +18,8 @@
     co = checkout
     df = diff
     oush = push
+    gl = log --graph --abbrev-commit --pretty=oneline --decorate
+    graphlog = gl
+
+[core]
+    ignorecase = false
