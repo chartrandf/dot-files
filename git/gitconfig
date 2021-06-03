@@ -20,7 +20,8 @@
     oush = push
     gl = log --graph --abbrev-commit --pretty=oneline --decorate
     graphlog = gl
-    branchr = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
+    recentbranch = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
+    rbranch = recentbranch
 
 [core]
     ignorecase = false
