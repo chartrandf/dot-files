@@ -22,6 +22,7 @@
     graphlog = gl
     recentbranch = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
     rbranch = recentbranch
+    cherrypick = cherry-pick
 
 [core]
     ignorecase = false
