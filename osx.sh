@@ -19,3 +19,7 @@ defaults write com.apple.screencapture type jpg
 killall SystemUIServer
 
 echo "OSX global vars configured"
+
+# Configuration for GIT
+sh ./git/configure.sh
+

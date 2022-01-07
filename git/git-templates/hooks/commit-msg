@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+##
+# @author Prahlad Yeri
+# @email prahladyeri@yahoo.com
+# @title Git hook for enforcing conventional commit spec
+#
+# @source(code): https://github.com/prahladyeri/enforce-git-message/blob/master/enforce_git_message/git-templates/hooks/commit-msg
+# @source(text): https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines
+#
+import re, sys, os
+
+RESTORE = '\033[0m'
+RED = '\033[00;31m'
+LGREEN='\033[01;32m'
+
+specs = f"""- {LGREEN}build{RESTORE}: changes that affect the build system or external dependencies
+- {LGREEN}chore{RESTORE}: cleaning or miscellaneous commit e.g. modifying .gitignore
+- {LGREEN}ci{RESTORE}: changes to CI configuration files and scripts
+- {LGREEN}docs{RESTORE}: documentation only changes
+- {LGREEN}feat{RESTORE}: a new feature
+- {LGREEN}fix{RESTORE}: a bug fix
+- {LGREEN}perf{RESTORE}: a code change that improves performance
+- {LGREEN}refactor{RESTORE}:  a code change that neither fixes a bug nor adds a feature
+- {LGREEN}style{RESTORE}: changes that do not affect the meaning of the code (white-space, formatting, lint, ...)
+- {LGREEN}test{RESTORE}: adding missing tests or correcting existing tests
+"""
+
+def main():
+  # example:
+  # feat(apikey): added the ability to add api key to configuration
+  pattern = r'(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert)(\([\w\-]+\))?:\s.*'
+  filename = sys.argv[1]
+  ss = open(filename, 'r').read()
+  m = re.match(pattern, ss)
+  if m == None:
+    #raise Exception("conventional commit validation failed")
+    print(f"\n{RED}COMMIT FAILED!{RESTORE}")
+    print("\nPlease enter commit message in the conventional format and try to commit again.")
+    print(specs)
+    sys.exit(1)
+
+if __name__ == "__main__":
+  main()
