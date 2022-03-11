@@ -1,3 +1,3 @@
-My basic .dotfiles configurations
----------------------------------
-Backup of my currents dot files. Feel free to use them.
+# dotfiles 🧑‍💻
+
+This repository contains my current setup. Not a big deal, but feel free to use them.
