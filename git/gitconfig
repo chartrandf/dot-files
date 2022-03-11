@@ -7,7 +7,8 @@
 
 [user]
     name = Francis Chartrand
-    email = chartrandf@bonyweb.com
+    email = chartrandf@users.noreply.github.com
+    signingkey = C3236393EC5237C4
 
 [alias]
     unstage = reset HEAD -- 
@@ -26,3 +27,12 @@
 
 [core]
     ignorecase = false
+
+[init]
+    templatedir = ~/.git-templates
+
+[commit]
+    gpgSign = true
+
+[tag]
+    gpgSign = true
