@@ -7,7 +7,9 @@
 # @source(code): https://github.com/prahladyeri/enforce-git-message/blob/master/enforce_git_message/git-templates/hooks/commit-msg
 # @source(text): https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines
 #
-import re, sys, os
+import re, sys
+
+MAX_LENGTH = 72
 
 RESTORE = '\033[0m'
 RED = '\033[00;31m'
@@ -25,19 +27,25 @@ specs = f"""- {LGREEN}build{RESTORE}: changes that affect the build system or ex
 - {LGREEN}test{RESTORE}: adding missing tests or correcting existing tests
 """
 
+def printWarning(msg):
+  print(f"\n{RED}COMMIT FAILED!{RESTORE}")
+  print(msg)
+  sys.exit(1)
+
 def main():
-  # example:
-  # feat(apikey): added the ability to add api key to configuration
-  pattern = r'(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert)(\([\w\-]+\))?:\s.*'
   filename = sys.argv[1]
   ss = open(filename, 'r').read()
-  m = re.match(pattern, ss)
-  if m == None:
-    #raise Exception("conventional commit validation failed")
-    print(f"\n{RED}COMMIT FAILED!{RESTORE}")
-    print("\nPlease enter commit message in the conventional format and try to commit again.")
-    print(specs)
-    sys.exit(1)
+  firstLine = ss.split('\n')[0]
+
+  # Length validation
+  if len(firstLine) > MAX_LENGTH:
+    printWarning(f"\nCommit message is too long ({MAX_LENGTH} chars. max)")
+
+  # Pattern validation
+  patternRegex = r'(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert)(\([\w\-]+\))?:\s.*'
+  patternMatch = re.match(patternRegex, ss)
+  if patternMatch == None:
+    printWarning(f"\nPlease enter commit message in the conventional format and try to commit again.\n{specs}")
 
 if __name__ == "__main__":
   main()
