@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
-##
-# @author Prahlad Yeri
-# @email prahladyeri@yahoo.com
-# @title Git hook for enforcing conventional commit spec
 #
-# @source(code): https://github.com/prahladyeri/enforce-git-message/blob/master/enforce_git_message/git-templates/hooks/commit-msg
-# @source(text): https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines
+# @inspiration(code): https://github.com/prahladyeri/enforce-git-message/blob/master/enforce_git_message/git-templates/hooks/commit-msg
+# @inspiration(text): https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines
 #
 import re, sys
 
@@ -38,8 +34,9 @@ def main():
   firstLine = ss.split('\n')[0]
 
   # Length validation
-  if len(firstLine) > MAX_LENGTH:
-    printWarning(f"\nCommit message is too long ({MAX_LENGTH} chars. max)")
+  firstLineLength = len(firstLine);
+  if firstLineLength > MAX_LENGTH:
+    printWarning(f"\nCommit message is too long, {MAX_LENGTH} characters max. (current: {firstLineLength} chars.)")
 
   # Pattern validation
   patternRegex = r'(build|ci|docs|feat|fix|perf|refactor|style|test|chore|revert)(\([\w\-]+\))?:\s.*'
