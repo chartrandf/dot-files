@@ -14,12 +14,8 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.finder AppleShowAllFiles -boolean true
 killall Finder
 
-# Change screenshot file from PNG to JPG
+# Change screenshot file from PNG to JPG (smaller filesize)
 defaults write com.apple.screencapture type jpg
 killall SystemUIServer
 
-echo "OSX global vars configured"
-
-# Configuration for GIT
-sh ./git/configure.sh
-
+echo "OSX: Global configuration is done"

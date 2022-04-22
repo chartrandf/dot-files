@@ -1,3 +1,7 @@
 # dotfiles 🧑‍💻
 
-This repository contains my current setup. Not a big deal, but feel free to use them.
+This repository is my current dev setup on Mac. Not a big deal, but feel free to use them.
+
+```sh
+sh setup.sh
+```
