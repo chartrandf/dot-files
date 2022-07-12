@@ -1,7 +1,9 @@
 cd git
 
 cp ./gitconfig ~/.gitconfig
+
 cp ./gitignore ~/.gitignore
+git config --global core.excludesfile ~/.gitignore
 
 # Global templates / hookes
 mkdir -p ~/.git-templates/hooks
