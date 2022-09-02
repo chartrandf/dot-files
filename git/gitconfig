@@ -17,6 +17,7 @@
     recentbranch = branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"
     rbranch = recentbranch
     cherrypick = cherry-pick
+    tmp-cm = !git add . && git commit -m 'fix: rollback me'
 
 [init]
     templatedir = ~/.git-templates
