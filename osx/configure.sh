@@ -18,4 +18,10 @@ killall Finder
 defaults write com.apple.screencapture type jpg
 killall SystemUIServer
 
+# Hot Corners → Top right screen corner → Desktop
+defaults write com.apple.dock wvous-tr-corner -int 4
+defaults write com.apple.dock wvous-tr-modifier -int 0
+killall Dock
+
+
 echo "OSX: Global configuration is done"
