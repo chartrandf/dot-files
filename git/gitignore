@@ -3,6 +3,7 @@ db/*.sqlite3
 log/
 tmp/
 .rvmrc
+.nvmrc
 .local*
 .DS_Store
 test/reports
