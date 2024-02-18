@@ -8,4 +8,4 @@ sh setup.sh
 
 
 ## Todo
-- [ ] Automate nvm installation
+- [ ] Automate oh-my-zsh installation
