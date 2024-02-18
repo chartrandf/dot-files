@@ -50,3 +50,6 @@
 
 [diff]
     colorMoved = default
+
+[branch]
+    sort = -committerdate
