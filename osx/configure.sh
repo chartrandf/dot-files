@@ -23,5 +23,7 @@ defaults write com.apple.dock wvous-tr-corner -int 4
 defaults write com.apple.dock wvous-tr-modifier -int 0
 killall Dock
 
+# Global scripts folder
+mkdir ~/scripts
 
 echo "OSX: Global configuration is done"

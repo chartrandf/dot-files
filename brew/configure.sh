@@ -24,10 +24,11 @@ brew "git"     # Install git
 brew "vim"     # Install vim
 
 # Helpers
-brew "delta"   # Install delta: Delta a better diff tool
+brew "git-delta"   # Install delta: Delta a better diff tool
 brew "httpie"  # Install httpie: Modern, user-friendly command-line HTTP client for the API era.
 brew "gh"      # Install gh: GitHub command-line interface
 brew "jq"      # Install jq: Command-line JSON processor
+brew "gh"      # Intall gh: Github CLI
 
 # Ruby
 brew "rbenv"
@@ -37,7 +38,7 @@ brew "ruby-build"
 # Install nvm instead of node
 
 # Database
-brew "postgres", restart_service: :changed
+brew "postgresql@16", restart_service: :changed
 brew "mysql"
 EOF
 
