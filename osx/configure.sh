@@ -1,8 +1,8 @@
 # Repeat delay
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Faster key repeat
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 2
 
 # Disable press and hold funtions
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -21,6 +21,9 @@ killall SystemUIServer
 # Hot Corners → Top right screen corner → Desktop
 defaults write com.apple.dock wvous-tr-corner -int 4
 defaults write com.apple.dock wvous-tr-modifier -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
+defaults write com.apple.dock orientation right
+defaults write com.apple.dock autohide -int 1
 killall Dock
 
 # Global scripts folder
