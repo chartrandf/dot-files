@@ -21,6 +21,7 @@ fi
 brew bundle --file=- <<EOF
 # Unix tools
 brew "git"     # Install git
+brew "gnupg"   # GnuPG for signed commit
 brew "vim"     # Install vim
 
 # Helpers
