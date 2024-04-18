@@ -7,7 +7,7 @@ git sparse-checkout set OTF
 git checkout release
 
 cp OTF/*.otf ~/Library/Fonts
-fc-cache -f # Update Font Cache
+sudo atsutil databases -remove
 
 cd ..
 rm -rf source-code-pro
