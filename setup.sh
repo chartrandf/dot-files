@@ -4,3 +4,5 @@ sh ./brew/configure.sh
 sh ./git/configure.sh
 sh ./fonts/configure.sh
 sh ./nvm/configure.sh
+
+sh ./manual-steps/configure.sh
