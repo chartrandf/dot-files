@@ -20,14 +20,17 @@ WHITE='\033[01;37m'
 echo "
 ${WHITE}✨ Almost there, remaining manual steps ✨${RESTORE}
 
-- ${WHITE}Configure Rectangle:${RESTORE} Open > Settings > Import > ${LBLUE}/manual-steps/files/RectangleConfig.json${RESTORE}
+- ${WHITE}Brew${RESTORE}:
+  - Validate brew configuration: ${LBLUE}brew doctor${RESTORE}
 - ${WHITE}OSX Manual Configuration:${RESTORE}
   - Increase key speed and reduce delay
   - Touchpad settings here: ${LBLUE}/manual-steps/files/trackpad${RESTORE}
 - ${WHITE}Apple Calendar${RESTORE}:
   - Configure work calendar
   - Configure Reminders > Work Account > Events > At the time of the event
-- ${WHITE}Itsycal${RESTORE}:
+- ${WHITE}Rectangle (App):${RESTORE}
+  - Open > Settings > Import > ${LBLUE}/manual-steps/files/RectangleConfig.json${RESTORE}
+- ${WHITE}Itsycal (App)${RESTORE}:
   - Itsycal settings here: ${LBLUE}/manual-steps/files/itsycal${RESTORE}
   - Control Center settings (hide default time): ${LBLUE}/manual/steps/file/control-center${RESTORE}
 "
