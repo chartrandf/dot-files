@@ -9,6 +9,7 @@ commands=(
     "./fonts/configure.sh"
     "./nvm/configure.sh"
     "./vim/configure.sh"
+    "./global/configure.sh"
 )
 
 for i in "${!commands[@]}"; do
