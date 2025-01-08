@@ -12,3 +12,6 @@ results
 /script/daemons.log
 /script/*.pid
 .vscode
+.yalc
+yalc.lock
+*.tsbuildinfo
