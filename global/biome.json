@@ -30,5 +30,10 @@
     "formatter": {
       "trailingCommas": "none"
     }
+  },
+  "files": {
+    "ignore": [
+      "~/Projects/to/ignore/*"
+    ]
   }
 }
