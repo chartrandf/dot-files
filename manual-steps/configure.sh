@@ -25,6 +25,7 @@ ${WHITE}✨ Almost there, remaining manual steps ✨${RESTORE}
 - ${WHITE}OSX Manual Configuration:${RESTORE}
   - Increase key speed and reduce delay
   - Touchpad settings here: ${LBLUE}/manual-steps/files/trackpad${RESTORE}
+  - Adjust color filter to orange: ${LBLUE}/manual-steps/files/color-filter/color-filter-always-on.jpg${RESTORE}
 - ${WHITE}Apple Calendar${RESTORE}:
   - Configure work calendar
   - Configure Reminders > Work Account > Events > At the time of the event
