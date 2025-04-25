@@ -46,6 +46,7 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 # Shortcuts
 alias histogrep='history | grep "$@"'
 alias lazyp="~/zcripts/lazy-prettier.sh"
+alias npmp="pnpm"
 
 # Wazo.io
 alias portalformat="git status -uno --porcelain | grep --color='never' '[A|M]' | cut -f3 -d' ' | xargs yarn format:file"
