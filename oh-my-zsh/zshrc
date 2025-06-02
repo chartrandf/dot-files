@@ -51,9 +51,6 @@ alias pn="pnpm"
 
 # Wazo.io
 alias portalformat="git status -uno --porcelain | grep --color='never' '[A|M]' | cut -f3 -d' ' | xargs yarn format:file"
-alias wdk-init="sh ~/zcripts/wazo.sh init"
-alias wdk-push="sh ~/zcripts/wazo.sh push"
-alias wdk-remove="sh ~/zcripts/wazo.sh remove"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
