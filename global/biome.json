@@ -31,7 +31,10 @@
   },
   "files": {
     "includes": [
-      "!~/Projects/to/ignore/*"
+      "!~/Projects/to/ignore/*",
+      "!node_modules",
+      "!dist",
+      "!build"
     ]
   },
   "assist": {
