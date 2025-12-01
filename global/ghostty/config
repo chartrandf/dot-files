@@ -1,0 +1,14 @@
+# Font
+font-family = Source Code Pro,Manoco,monospace
+font-size = 18.5
+
+# Appearance
+background-blur = 20
+background-opacity = 0.8
+bold-is-bright = true
+cursor-style = bar
+theme = Deep
+cursor-click-to-move = true
+
+# Keybinds
+keybind = cmd+shift+r=reload_config

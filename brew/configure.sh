@@ -51,7 +51,7 @@ cask "beekeeper-studio"     # https://www.beekeeperstudio.io/
 cask "bitwarden"            # https://bitwarden.com/
 cask "docker"               # https://www.docker.com/products/docker-desktop
 cask "firefox"              # https://www.mozilla.org/firefox/
-cask "iterm2"               # https://iterm2.com/
+cask "ghostty"              # https://ghostty.org/
 cask "itsycal"              # https://www.mowglii.com/itsycal/
 cask "spotify"              # https://www.spotify.com/
 cask "imageoptim"           # https://imageoptim.com/mac
