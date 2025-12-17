@@ -10,5 +10,10 @@ cursor-style = bar
 theme = Deep
 cursor-click-to-move = true
 
+# Window
+window-padding-x = 15
+window-padding-y = 10
+
 # Keybinds
 keybind = cmd+shift+r=reload_config
+keybind = shift+enter=text:\n
