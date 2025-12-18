@@ -10,6 +10,7 @@ commands=(
     "./nvm/configure.sh"
     "./vim/configure.sh"
     "./global/configure.sh"
+    "./claude/configure.sh"
 )
 
 for i in "${!commands[@]}"; do

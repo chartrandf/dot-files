@@ -49,9 +49,6 @@ alias lazyp="~/zcripts/lazy-prettier.sh"
 alias npmp="pnpm"
 alias pn="pnpm"
 
-# Wazo.io
-alias portalformat="git status -uno --porcelain | grep --color='never' '[A|M]' | cut -f3 -d' ' | xargs yarn format:file"
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -62,6 +59,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/npm/bin" # Add Node to PATH for scripting
 export GPG_TTY=$(tty) # Help gpg for git signature
+
+export LOCAL_GIT_REPOS="~/Projects" # Local git repositories path
 
 # Start SSH Forward agent
 SSH_ENV=$HOME/.ssh/environment
