@@ -12,8 +12,8 @@ results
 /script/daemons.log
 /script/*.pid
 .vscode
-.claude
 .cursor
+.claude/settings.local.json
 .yalc
 yalc.lock
 *.tsbuildinfo
