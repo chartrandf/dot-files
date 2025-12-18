@@ -30,7 +30,7 @@ brew "git-delta"   # Install delta: Delta a better diff tool
 brew "httpie"      # Install httpie: Modern, user-friendly command-line HTTP client for the API era.
 brew "gh"          # Install gh: GitHub command-line interface
 brew "jq"          # Install jq: Command-line JSON processor
-brew "gh"          # Intall gh: Github CLI
+brew "ripgrep"     # Install ripgrep: A fast, modern grep alternative
 
 # Ruby
 brew "rbenv"
