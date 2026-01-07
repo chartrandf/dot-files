@@ -46,6 +46,7 @@ brew "mysql"
 # Applications
 cask "rectangle"            # https://rectangleapp.com/
 cask "raycast"              # https://www.raycast.com/
+cask "handy"                # https://handy.computer/
 cask "visual-studio-code"   # https://code.visualstudio.com/
 cask "beekeeper-studio"     # https://www.beekeeperstudio.io/
 cask "bitwarden"            # https://bitwarden.com/
@@ -54,7 +55,6 @@ cask "firefox"              # https://www.mozilla.org/firefox/
 cask "ghostty"              # https://ghostty.org/
 cask "itsycal"              # https://www.mowglii.com/itsycal/
 cask "spotify"              # https://www.spotify.com/
-cask "imageoptim"           # https://imageoptim.com/mac
 EOF
 
 echo "Homebrew: Configuration is done"
