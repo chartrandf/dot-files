@@ -1,0 +1,32 @@
+{
+  "title": "Ghostty: button5 → left click + Enter",
+  "rules": [
+    {
+      "description": "Ghostty: mouse button5 simulates left click + Enter",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button5"
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            },
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.mitchellh\\.ghostty$"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

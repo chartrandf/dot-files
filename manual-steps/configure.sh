@@ -31,7 +31,6 @@ ${WHITE}✨ Almost there, remaining manual steps ✨${RESTORE}
   - Configure Reminders > Work Account > Events > At the time of the event
 - ${WHITE}Rectangle (App):${RESTORE}
   - Open > Settings > Import > ${LBLUE}/manual-steps/files/RectangleConfig.json${RESTORE}
-- ${WHITE}Itsycal (App)${RESTORE}:
-  - Itsycal settings here: ${LBLUE}/manual-steps/files/itsycal${RESTORE}
-  - Control Center settings (hide default time): ${LBLUE}/manual/steps/file/control-center${RESTORE}
+- ${WHITE}Karabiner-Elements (App)${RESTORE}:
+  - Activate Complex Modifications > Add predefined rules > Add & enable my predefined rules
 "

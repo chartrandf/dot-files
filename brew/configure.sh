@@ -55,6 +55,7 @@ cask "firefox"              # https://www.mozilla.org/firefox/
 cask "ghostty"              # https://ghostty.org/
 cask "itsycal"              # https://www.mowglii.com/itsycal/
 cask "spotify"              # https://www.spotify.com/
+cask "karabiner-elements"   # https://karabiner-elements.pqrs.org/
 EOF
 
 echo "Homebrew: Configuration is done"
