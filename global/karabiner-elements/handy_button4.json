@@ -1,0 +1,22 @@
+{
+  "title": "Handy: button4 → Left Option + Space",
+  "rules": [
+    {
+      "description": "Handy: mouse button4 → Left Option + Space (push-to-talk)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "pointing_button": "button4"
+          },
+          "to": [
+            {
+              "key_code": "spacebar",
+              "modifiers": ["left_option"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
