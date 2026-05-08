@@ -50,6 +50,28 @@ alias npmp="pnpm"
 alias pn="pnpm"
 alias clo="claude"
 
+# Misc Update Minecraft Profile Name (macOS)
+minecraft_username() {
+  # Check if a name was provided
+  if [ -z "$1" ]; then
+    echo "Usage: minecraft_username <new_username>"
+    return 1
+  fi
+
+  # The official macOS path
+  local FILE="$HOME/Library/Application Support/minecraft/launcher_accounts.json"
+
+  if [ -f "$FILE" ]; then
+    # -i '' is required on macOS to edit in place without a mandatory backup extension
+    # The regex looks for "name": "anything" and replaces it with "name": "your_arg"
+    sed -i '' -E "s/\"name\"[[:space:]]*:[[:space:]]*\"[^\"]+\"/\"name\": \"$1\"/g" "$FILE"
+
+    echo "Successfully updated name to '$1' in launcher_accounts.json"
+  else
+    echo "Error: File not found at $FILE"
+  fi
+}
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
