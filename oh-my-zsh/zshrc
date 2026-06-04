@@ -28,6 +28,31 @@ alias rn-start="react-native start"
 alias adb-d="adb devices"
 alias adb-r="adb reverse tcp:8081 tcp:8081 | echo 'adb : reverse tcp:8081'"
 
+# Dump adb logcat since a time range into a timestamped file.
+# Usage: adb-time [device-name] [range]   (defaults: android 5m)
+# Range units: s, m (minutes), h, d   e.g. 30s, 5m, 1h, 2d
+adb-time() {
+  local device="${1:-android}"
+  local range="${2:-5m}"
+
+  local num="${range%[smhd]}"
+  local unit="${range#$num}"
+  local vflag
+  case "$unit" in
+    s) vflag="S" ;;
+    m) vflag="M" ;;
+    h) vflag="H" ;;
+    d) vflag="d" ;;
+    *) echo "Invalid range '$range' (use e.g. 30s, 5m, 1h, 2d)"; return 1 ;;
+  esac
+
+  local since file
+  since="$(date -v-${num}${vflag} '+%m-%d %H:%M:%S.000')"
+  file="${device}-$(date +%Y-%m-%d_%H-%M-%S).log"
+
+  adb logcat -t "$since" > "$file" && echo "adb logcat (last $range) -> $file"
+}
+
 # Date
 alias current_date='date "+%Y-%m-%d %H:%M:%S"'
 alias current-date='current_date'
