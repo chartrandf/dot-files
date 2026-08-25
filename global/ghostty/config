@@ -1,5 +1,5 @@
 # Font
-font-family = Source Code Pro,Manoco,monospace
+font-family = "Source Code Pro",Manoco,monospace
 font-size = 18.5
 
 # Appearance
@@ -18,3 +18,8 @@ maximize = true
 # Keybinds
 keybind = cmd+shift+r=reload_config
 keybind = shift+enter=text:\n
+
+# Keyboard
+# Left Option sends Alt/Meta so alt+* shortcuts work instead of inserting
+# glyphs; right Option still composes accented characters (e.g. e -> é).
+macos-option-as-alt = left
