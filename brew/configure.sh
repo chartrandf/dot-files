@@ -27,10 +27,11 @@ brew "vim"     # Install vim
 
 # Helpers
 brew "git-delta"   # Install delta: Delta a better diff tool
-brew "httpie"      # Install httpie: Modern, user-friendly command-line HTTP client for the API era.
+brew "httpie"      # Install httpie: Modern, user-friendly command-line HTTP client for the API era
 brew "gh"          # Install gh: GitHub command-line interface
 brew "jq"          # Install jq: Command-line JSON processor
 brew "ripgrep"     # Install ripgrep: A fast, modern grep alternative
+brew "scrcpy"      # Install scrcpy: Display and control your Android device from computer
 
 # Ruby
 brew "rbenv"
