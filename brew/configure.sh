@@ -18,6 +18,9 @@ if ! command -v brew >/dev/null; then
     export PATH="$HOMEBREW_PREFIX/bin:$PATH"
 fi
 
+brew tap chartrandf/lookout https://github.com/chartrandf/lookout
+brew trust chartrandf/lookout
+
 brew bundle --file=- <<EOF
 # Unix tools
 brew "git"     # Install git
@@ -57,6 +60,7 @@ cask "ghostty"              # https://ghostty.org/
 cask "itsycal"              # https://www.mowglii.com/itsycal/
 cask "spotify"              # https://www.spotify.com/
 cask "karabiner-elements"   # https://karabiner-elements.pqrs.org/
+cask "lookout", args: { "no-quarantine": true }   # https://github.com/chartrandf/lookout
 EOF
 
 echo "Homebrew: Configuration is done"
