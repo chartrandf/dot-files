@@ -21,6 +21,8 @@ fi
 brew tap chartrandf/lookout https://github.com/chartrandf/lookout
 brew trust chartrandf/lookout
 
+brew trust --tap abue-ammar/tinycast
+
 brew bundle --file=- <<EOF
 # Unix tools
 brew "git"     # Install git
@@ -49,7 +51,7 @@ brew "mysql"
 
 # Applications
 cask "rectangle"            # https://rectangleapp.com/
-cask "raycast"              # https://www.raycast.com/
+cask "abue-ammar/tinycast/tinycast"   # https://github.com/abue-ammar/tinycast
 cask "handy"                # https://handy.computer/
 cask "visual-studio-code"   # https://code.visualstudio.com/
 cask "beekeeper-studio"     # https://www.beekeeperstudio.io/
