@@ -37,6 +37,7 @@ brew "gh"          # Install gh: GitHub command-line interface
 brew "jq"          # Install jq: Command-line JSON processor
 brew "ripgrep"     # Install ripgrep: A fast, modern grep alternative
 brew "scrcpy"      # Install scrcpy: Display and control your Android device from computer
+brew "mitmproxy"   # Install mitmproxy: Interactive HTTPS proxy for inspecting traffic
 
 # Ruby
 brew "rbenv"

@@ -1,0 +1,2 @@
+listen_port: 9090   # proxy; point the phone/emulator here
+web_port: 9091      # mitmweb UI, keeps 8081/8082 free for Metro

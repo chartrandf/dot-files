@@ -8,5 +8,9 @@ cp ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty
 mkdir -p ~/.config/karabiner/assets/complex_modifications
 cp karabiner-elements/*.json ~/.config/karabiner/assets/complex_modifications/
 
+# mitmproxy
+mkdir -p ~/.mitmproxy
+cp mitmproxy/config.yaml ~/.mitmproxy/
+
 cd ..
 echo "Global Setup: Configuration is done"
