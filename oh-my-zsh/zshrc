@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$PATH:$HOME/npm/bin" # Add Node to PATH for scripting
+export PATH="$PATH:$HOME/.local/bin" # User scripts (quick-proxy)
 export GPG_TTY=$(tty) # Help gpg for git signature
 
 export LOCAL_GIT_REPOS="~/Projects" # Local git repositories path
